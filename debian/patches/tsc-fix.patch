@@ -1,0 +1,15 @@
+Description: tsc ≥ 4.1 workaround
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: no
+Last-Update: 2021-01-18
+
+--- a/test/ecmascript.ts
++++ b/test/ecmascript.ts
+@@ -232,6 +232,7 @@
+     assert.ok(!n.Expression.check(decl));
+ 
+     // This makes decl cease to conform to n.VariableDeclaration.
++    // @ts-ignore
+     decl.declarations.push(b.literal("bar") as $InvalidType);
+ 
+     assert.ok(n.Node.check(decl));

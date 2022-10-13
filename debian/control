@@ -1,0 +1,32 @@
+Source: node-ast-types
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Julien Puydt <jpuydt@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , mocha
+ , nodejs
+ , node-babel7
+ , node-minimatch
+ , node-tslib (>= 2.3.1~)
+ , node-esprima
+ , node-types-node
+ , node-typescript
+ , node-types-estree
+ , node-esprima
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://github.com/benjamn/ast-types
+Vcs-Git: https://salsa.debian.org/js-team/node-ast-types.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-ast-types
+
+Package: node-ast-types
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, nodejs, node-tslib
+Description: Esprima-compatible implementation of the Mozilla JS Parser API
+ This module provides an efficient, modular and Esprima-compatible
+ implementation of the abstract syntax tree type hierarchy pioneered by the
+ Mozilla Parser API.
+ .
+ Node.js is an event-based server-side JavaScript engine.

@@ -1,0 +1,9 @@
+package.json usr/share/nodejs/ast-types/
+def usr/share/nodejs/ast-types/
+fork.* usr/share/nodejs/ast-types/
+gen usr/share/nodejs/ast-types/
+lib usr/share/nodejs/ast-types/
+main.* usr/share/nodejs/ast-types/
+script usr/share/nodejs/ast-types/
+types usr/share/nodejs/ast-types/
+types.* usr/share/nodejs/ast-types/
