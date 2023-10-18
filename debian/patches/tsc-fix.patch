@@ -1,15 +1,17 @@
-Description: tsc ≥ 4.1 workaround
+Description: tsc workaround
 Author: Xavier Guimard <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1054161
 Forwarded: no
-Last-Update: 2021-01-18
+Last-Update: 2023-10-18
 
---- a/test/ecmascript.ts
-+++ b/test/ecmascript.ts
-@@ -232,6 +232,7 @@
-     assert.ok(!n.Expression.check(decl));
- 
-     // This makes decl cease to conform to n.VariableDeclaration.
-+    // @ts-ignore
-     decl.declarations.push(b.literal("bar") as $InvalidType);
- 
-     assert.ok(n.Node.check(decl));
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -2,7 +2,7 @@
+   "compilerOptions": {
+     "rootDir": "./src",
+     "outDir": "./lib",
+-    "target": "es5",
++    "target": "ESNext",
+     "module": "commonjs",
+     "declaration": true,
+     "sourceMap": true,

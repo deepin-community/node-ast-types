@@ -1,0 +1,17 @@
+Description: drop one test
+ this test needs external source code
+Author: Yadd <yadd@debian.org>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+Last-Update: 2023-10-18
+
+--- a/src/test/run.ts
++++ b/src/test/run.ts
+@@ -1,5 +1,5 @@
+ import "./api";
+ import "./ecmascript";
+-import "./typescript";
++//import "./typescript";
+ import "./flow";
+ import "./type-annotations";
