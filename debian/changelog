@@ -1,3 +1,50 @@
+node-ast-types (0.16.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * Update lintian override info format in d/source/lintian-overrides
+    on line 2, 5-6
+
+  [ Yadd ]
+  * Update standards version to 4.6.2, no changes needed.
+  * New upstream version 0.16.1
+  * Update build (Closes: #1054161)
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Wed, 18 Oct 2023 17:14:22 +0400
+
+node-ast-types (0.15.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix test for babel 7.17.2 (Closes: #1005583)
+
+ -- Yadd <yadd@debian.org>  Sun, 13 Feb 2022 10:23:35 +0100
+
+node-ast-types (0.15.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * Drop nodejs dependency
+  * Use dh-sequence-nodejs auto links & install
+  * Update debian/clean
+  * Enable upstream test (mocha)
+
+ -- Yadd <yadd@debian.org>  Tue, 07 Dec 2021 11:54:52 +0100
+
+node-ast-types (0.15.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 07 Dec 2021 08:41:49 +0100
+
+node-ast-types (0.15.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 01 Dec 2021 08:01:57 +0100
+
 node-ast-types (0.14.1-9) unstable; urgency=medium
 
   * Team upload

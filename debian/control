@@ -4,26 +4,27 @@ Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Julien Puydt <jpuydt@debian.org>
 Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , mocha
- , nodejs
  , node-babel7
- , node-minimatch
+ , node-espree
+ , node-esprima
+ , node-esprima-fb <!nocheck>
+ , node-glob
  , node-tslib (>= 2.3.1~)
- , node-esprima
- , node-types-node
  , node-typescript
- , node-types-estree
- , node-esprima
-Standards-Version: 4.6.0
-Rules-Requires-Root: no
-Homepage: https://github.com/benjamn/ast-types
-Vcs-Git: https://salsa.debian.org/js-team/node-ast-types.git
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-ast-types
+Vcs-Git: https://salsa.debian.org/js-team/node-ast-types.git
+Homepage: https://github.com/benjamn/ast-types
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-ast-types
 Architecture: all
+Depends: ${misc:Depends}
+ , node-tslib
 Multi-Arch: foreign
-Depends: ${misc:Depends}, nodejs, node-tslib
 Description: Esprima-compatible implementation of the Mozilla JS Parser API
  This module provides an efficient, modular and Esprima-compatible
  implementation of the abstract syntax tree type hierarchy pioneered by the

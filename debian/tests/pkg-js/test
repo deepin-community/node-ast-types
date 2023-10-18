@@ -1,0 +1,5 @@
+if test "$AUTOPKGTEST_TMP" != ""; then
+	rm -rf lib
+	tsc
+fi
+mocha lib/test/run.js --bail

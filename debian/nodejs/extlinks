@@ -1,0 +1,7 @@
+@babel/parser
+@babel/types
+tslib
+@types/esprima
+@types/estree
+@types/glob
+@types/mocha

@@ -1,0 +1,6 @@
+# Test file
+source-is-missing [debian/tests/test_modules/flow-parser/flow_parser.js]
+
+# False positive: data
+very-long-line-length-in-source-file 7969 > 512 [gen/kinds.ts:3]
+very-long-line-length-in-source-file 5254 > 512 [gen/namedTypes.ts:1688]

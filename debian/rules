@@ -4,11 +4,4 @@
 	dh $@
 
 override_dh_auto_build:
-	mkdir -p node_modules/@types
-	for toto in @babel esprima minimatch tslib; do \
-		cp -R /usr/share/nodejs/$$toto node_modules/ ; \
-	done
-	for toto in esprima estree glob minimatch mocha node; do \
-		cp -R /usr/share/nodejs/@types/$$toto node_modules/@types/ ; \
-	done
 	tsc

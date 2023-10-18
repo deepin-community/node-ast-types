@@ -1,3 +1,0 @@
-Tests: require
-Restrictions: superficial
-Depends: @, node-tslib
